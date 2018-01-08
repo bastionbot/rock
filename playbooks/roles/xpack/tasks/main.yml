@@ -5,8 +5,9 @@
 
 - name: Install X-Pack license
   uri:
-    url: "http://{{ rock_hostname }}/_xpack/license"
+    url: "http://{{ ansible_hostname }}/_xpack/license"
     method: PUT
     HEADER_content-type: "application/json"
     user: "elastic"
+    password: "changeme"
     body: "{{ lookup('file', 'license.json') }}"
