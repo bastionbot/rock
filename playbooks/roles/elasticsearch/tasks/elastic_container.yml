@@ -93,6 +93,9 @@
 - name: "Wait for Elasticsearch to become ready"
   wait_for: "host=localhost port=9200"
 
+- name: "Activate X-Pack license"
+  
+
 #- name: "Check for Bro mapping templates"
 #  failed_when: false
 #  register: bro_mapping
