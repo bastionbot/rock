@@ -63,6 +63,7 @@ all:
     with_snort: false
     with_stenographer: true
     with_suricata: true
+    with_xpack: true
     with_zookeeper: true
 
     rocknsm_package_list:
