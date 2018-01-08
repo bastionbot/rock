@@ -7,7 +7,7 @@
   uri:
     url: "http://localhost:9200/_xpack/license"
     method: PUT
-    headers: "content-type: application/json"
+    headers: "Content-Type='application/json'"
     user: "elastic"
     password: "changeme"
     body: "{{ lookup('file', 'license.json') }}"
