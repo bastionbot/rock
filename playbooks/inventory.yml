@@ -64,15 +64,15 @@ all:
       children:
         master-servers:
 
-    dnsmasq:
-      children:
+    #dnsmasq:
+#      children:
         # Add servers here if needed
 
     # Broad categories for convienience
     sensors:
 
       vars:
-        home_net: "[192.168.0.0/16,10.0.0.0/8,172.16.0.0/12]"
+        home_net: "\"[192.168.0.0/16,10.0.0.0/8,172.16.0.0/12]\""
 
       hosts:
         rocksensor1.lan:
